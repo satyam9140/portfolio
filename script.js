@@ -183,7 +183,7 @@ const PROJECTS = [
     description: "Complete donation management system with user authentication and admin dashboard.",
     stack: ["React", "Node.js", "MongoDB", "Stripe"],
     live: "https://example.com",
-    code: "https://github.com/",
+    code: "https://github.com/satyam9140/DONATION_WEB.git",
     highlights: [
       "Secure payment processing with Stripe",
       "Real-time donation tracking",
@@ -199,7 +199,7 @@ const PROJECTS = [
     description: "Modern portfolio with smooth animations, project showcase, and contact form.",
     stack: ["HTML", "CSS", "JavaScript", "Canvas API"],
     live: "#",
-    code: "https://github.com/",
+    code: "https://github.com/satyam9140/portfolio.git",
     highlights: [
       "Animated particle background",
       "Smooth scroll reveals",
@@ -263,7 +263,7 @@ const PROJECTS = [
     description: "Real-time messaging app with socket.io, user presence, and message history.",
     stack: ["React", "Node.js", "Socket.io", "MongoDB"],
     live: "#",
-    code: "https://github.com/",
+    code: "https://github.com/satyam9140/Chat.git",
     highlights: [
       "Real-time messaging with Socket.io",
       "User presence indicators",
@@ -817,4 +817,5 @@ if (navigator.deviceMemory && navigator.deviceMemory <= 2) {
 // Log when page is fully loaded
 window.addEventListener('load', () => {
   console.log('Portfolio loaded successfully! 🚀');
+
 });

@@ -198,7 +198,7 @@ const PROJECTS = [
     tag: "Frontend",
     description: "Modern portfolio with smooth animations, project showcase, and contact form.",
     stack: ["HTML", "CSS", "JavaScript", "Canvas API"],
-    live: "#",
+    live: "https://satyam9140.github.io/portfolio/",
     code: "https://github.com/satyam9140/portfolio.git",
     highlights: [
       "Animated particle background",
@@ -819,3 +819,4 @@ window.addEventListener('load', () => {
   console.log('Portfolio loaded successfully! 🚀');
 
 });
+

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satyam Singh • Full-Stack Developer Portfolio</title>
+
+  <meta name="description" content="Satyam Singh - Full-Stack Developer. Modern UI/UX, animations, and real-world projects." />
+  <meta name="theme-color" content="#0a0e27" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+    <div class="mesh-gradient" id="meshGradient"></div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Floating particles background -->
+  <canvas id="bgCanvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Satyam<span class="brand__accent">.</span></span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#contact">Contact</a>
+
+        <a class="btn btn--primary" href="#contact">
+          <i class="fa-regular fa-paper-plane"></i>
+          Hire Me
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="home">
+      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__left reveal">
+          <p class="hero__eyebrow">
+            <span class="pill">
+              <span class="pulse-dot"></span>
+              Available for work
+            </span>
+          </p>
+
+          <h1 class="hero__title">
+            Hi, I'm <span class="gradient-text">Satyam Singh</span>
+            <br />
+            <span class="hero__subtitle" id="typewriter"></span>
+          </h1>
+
+          <p class="hero__desc">
+            I craft beautiful, interactive web experiences with stunning animations, 
+            modern design patterns, and clean, maintainable code.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">
+              <i class="fa-solid fa-diagram-project"></i>
+              View Projects
+            </a>
+
+            <a class="btn btn--secondary" href="#contact">
+              <i class="fa-regular fa-message"></i>
+              Contact Me
+            </a>
+
+            <a class="btn btn--outline" href="#" id="downloadResumeBtn">
+              <i class="fa-regular fa-file-lines"></i>
+              Resume
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num"><span data-count="12">0</span>+</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num"><span data-count="8">0</span>+</div>
+              <div class="stat__label">Technologies</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num"><span data-count="100">0</span>%</div>
+              <div class="stat__label">Dedication</div>
+            </div>
+          </div>
+
+          <div class="hero__social">
+            <a class="icon-btn" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="icon-btn" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="icon-btn" href="mailto:satyam@example.com" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a class="icon-btn" href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <div class="hero-card">
+            <div class="hero-card__border"></div>
+            
+            <div class="hero-card__top">
+              <div class="avatar">
+                <span class="avatar__ring"></span>
+                <span class="avatar__inner">
+                  <i class="fa-solid fa-code"></i>
+                </span>
+              </div>
+
+              <div>
+                <h3 class="hero-card__name">Satyam Singh</h3>
+                <p class="hero-card__role">Full-Stack Developer</p>
+              </div>
+            </div>
+
+            <div class="hero-card__chips">
+              <span class="chip"><i class="fa-brands fa-react"></i> React</span>
+              <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="chip"><i class="fa-brands fa-node-js"></i> Node</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> MongoDB</span>
+            </div>
+
+            <div class="hero-card__mini">
+              <div class="mini">
+                <div class="mini__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="mini__text">
+                  <div class="mini__title">UI/UX Expert</div>
+                  <div class="mini__desc">Animations & smooth interactions</div>
+                </div>
+              </div>
+
+              <div class="mini">
+                <div class="mini__icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="mini__text">
+                  <div class="mini__title">High Performance</div>
+                  <div class="mini__desc">Optimized & fast loading</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card__footer">
+              <span class="status">
+                <span class="status__dot"></span>
+                Open to opportunities
+              </span>
+
+              <a class="link" href="#contact">
+                Let's collaborate <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__desc">
+            I'm a passionate developer focused on creating beautiful, interactive web experiences.
+            My expertise spans modern frontend frameworks and backend technologies.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card reveal">
+            <h3 class="card__title">What I Do</h3>
+            <ul class="list">
+              <li><i class="fa-solid fa-check"></i> Build responsive, modern web interfaces</li>
+              <li><i class="fa-solid fa-check"></i> Create smooth, performant animations</li>
+              <li><i class="fa-solid fa-check"></i> Develop full-stack applications</li>
+              <li><i class="fa-solid fa-check"></i> Optimize for speed & accessibility</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3 class="card__title">My Journey</h3>
+            <div class="badges">
+              <span class="badge">Modern Design</span>
+              <span class="badge">Animations</span>
+              <span class="badge">Responsive</span>
+              <span class="badge">Clean Code</span>
+              <span class="badge">Performance</span>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <div>
+                  <div class="timeline__title">Frontend Developer</div>
+                  <div class="timeline__desc">HTML, CSS, JavaScript, React</div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <div>
+                  <div class="timeline__title">Full-Stack Learning</div>
+                  <div class="timeline__desc">Node.js, Express, MongoDB</div>
+                </div>
+              </div>
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <div>
+                  <div class="timeline__title">Current Goal</div>
+                  <div class="timeline__desc">Build impactful web applications</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__desc">
+            A showcase of my best work featuring modern UI, smooth animations, and functional features.
+          </p>
+        </div>
+
+        <div class="projects-toolbar reveal">
+          <div class="tabs" id="projectFilters" aria-label="Project filters"></div>
+
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="projectSearch" type="text" placeholder="Search projects..." autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Skills & Expertise</h2>
+          <p class="section__desc">
+            Technologies and tools I work with to build amazing digital experiences.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Let's Work Together</h2>
+          <p class="section__desc">
+            Have a project in mind? Let's build something amazing together. Reach out and let's start a conversation.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card reveal">
+            <h3 class="card__title">Get in Touch</h3>
+            <p class="muted">
+              Choose your preferred way to connect:
+            </p>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:satyam@example.com">
+                <div class="contact-card__icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <div class="contact-card__title">Email</div>
+                  <div class="contact-card__desc">satyam@example.com</div>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a class="contact-card" href="https://github.com/" target="_blank" rel="noreferrer">
+                <div class="contact-card__icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <div class="contact-card__title">GitHub</div>
+                  <div class="contact-card__desc">Check my code</div>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+
+              <a class="contact-card" href="https://linkedin.com/" target="_blank" rel="noreferrer">
+                <div class="contact-card__icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <div class="contact-card__title">LinkedIn</div>
+                  <div class="contact-card__desc">Connect with me</div>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="card reveal form" id="contactForm">
+            <div class="form__row">
+              <label class="label">Full Name</label>
+              <input class="input" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form__row">
+              <label class="label">Email Address</label>
+              <input class="input" name="email" type="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form__row">
+              <label class="label">Message</label>
+              <textarea class="input textarea" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--full" type="submit">
+              <i class="fa-regular fa-paper-plane"></i>
+              Send Message
+            </button>
+
+            <p class="form__hint" id="formHint"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="brand__dot"></span>
+          <span class="brand__text">Satyam<span class="brand__accent">.</span></span>
+        </div>
+        <p class="muted">
+          Building modern, interactive web experiences with attention to design and performance.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4 class="footer__title">Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__social">
+        <h4 class="footer__title">Connect</h4>
+        <div class="footer__icons">
+          <a class="icon-btn" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a class="icon-btn" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a class="icon-btn" href="mailto:satyam@example.com" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+          <a class="icon-btn" href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+
+        <a class="btn btn--outline btn--full" href="#top">
+          <i class="fa-solid fa-arrow-up"></i>
+          Back to Top
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year"></span> Satyam Singh. All rights reserved.</span>
+        <span class="muted">Crafted with <i class="fa-solid fa-heart"></i> + <i class="fa-solid fa-code"></i></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close" data-close="true">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

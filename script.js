@@ -585,7 +585,7 @@ contactForm?.addEventListener("submit", (e) => {
 qs("#downloadResumeBtn")?.addEventListener("click", (e) => {
   e.preventDefault();
   // Replace with your actual resume URL
-  window.open("https://example.com/resume.pdf", "_blank");
+  window.open("https://drive.google.com/file/d/13wJqIZi634YVgT47dSnEAPGkLzIgVSXh/view?usp=drive_link", "_blank");
 });
 
 // ========================
@@ -819,4 +819,5 @@ window.addEventListener('load', () => {
   console.log('Portfolio loaded successfully! 🚀');
 
 });
+
 

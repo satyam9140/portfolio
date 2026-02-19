@@ -207,54 +207,54 @@ const PROJECTS = [
       "Interactive modal previews"
     ]
   },
-  {
-    id: "todo-app",
-    title: "Advanced To-Do Application",
-    category: "Frontend",
-    tag: "Frontend",
-    description: "Feature-rich to-do app with local storage, drag-and-drop, and dark mode.",
-    stack: ["JavaScript", "LocalStorage", "CSS Grid"],
-    live: "#",
-    code: "https://github.com/",
-    highlights: [
-      "Drag and drop functionality",
-      "Category organization",
-      "Persistent data storage",
-      "Smooth UI animations"
-    ]
-  },
-  {
-    id: "ecommerce-store",
-    title: "E-Commerce Store",
-    category: "Full Stack",
-    tag: "Full Stack",
-    description: "Full-featured online store with product catalog, shopping cart, and checkout.",
-    stack: ["React", "Express", "MongoDB", "Tailwind CSS"],
-    live: "#",
-    code: "https://github.com/",
-    highlights: [
-      "Product filtering and search",
-      "Shopping cart functionality",
-      "Order tracking system",
-      "Admin product management"
-    ]
-  },
-  {
-    id: "weather-app",
-    title: "Real-Time Weather App",
-    category: "Frontend",
-    tag: "Frontend",
-    description: "Beautiful weather application with real-time data and animated weather icons.",
-    stack: ["JavaScript", "API Integration", "Chart.js"],
-    live: "#",
-    code: "https://github.com/",
-    highlights: [
-      "Real-time weather updates",
-      "Location-based forecasts",
-      "Beautiful UI animations",
-      "Responsive design"
-    ]
-  },
+  // {
+  //   id: "todo-app",
+  //   title: "Advanced To-Do Application",
+  //   category: "Frontend",
+  //   tag: "Frontend",
+  //   description: "Feature-rich to-do app with local storage, drag-and-drop, and dark mode.",
+  //   stack: ["JavaScript", "LocalStorage", "CSS Grid"],
+  //   live: "#",
+  //   code: "https://github.com/",
+  //   highlights: [
+  //     "Drag and drop functionality",
+  //     "Category organization",
+  //     "Persistent data storage",
+  //     "Smooth UI animations"
+  //   ]
+  // },
+  // {
+  //   id: "ecommerce-store",
+  //   title: "E-Commerce Store",
+  //   category: "Full Stack",
+  //   tag: "Full Stack",
+  //   description: "Full-featured online store with product catalog, shopping cart, and checkout.",
+  //   stack: ["React", "Express", "MongoDB", "Tailwind CSS"],
+  //   live: "#",
+  //   code: "https://github.com/",
+  //   highlights: [
+  //     "Product filtering and search",
+  //     "Shopping cart functionality",
+  //     "Order tracking system",
+  //     "Admin product management"
+  //   ]
+  // },
+  // {
+  //   id: "weather-app",
+  //   title: "Real-Time Weather App",
+  //   category: "Frontend",
+  //   tag: "Frontend",
+  //   description: "Beautiful weather application with real-time data and animated weather icons.",
+  //   stack: ["JavaScript", "API Integration", "Chart.js"],
+  //   live: "#",
+  //   code: "https://github.com/",
+  //   highlights: [
+  //     "Real-time weather updates",
+  //     "Location-based forecasts",
+  //     "Beautiful UI animations",
+  //     "Responsive design"
+  //   ]
+  // },
   {
     id: "chat-app",
     title: "Real-Time Chat Application",
@@ -819,5 +819,6 @@ window.addEventListener('load', () => {
   console.log('Portfolio loaded successfully! 🚀');
 
 });
+
 
 

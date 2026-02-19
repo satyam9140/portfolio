@@ -454,7 +454,12 @@ const SKILLS = [
   { name: "Node.js", level: 75, icon: "fa-brands fa-node-js", note: "APIs, backend development" },
   { name: "MongoDB", level: 70, icon: "fa-solid fa-database", note: "Database design, queries" },
   { name: "Tailwind CSS", level: 85, icon: "fa-solid fa-palette", note: "Utility-first styling" },
-  { name: "Git", level: 90, icon: "fa-brands fa-git-alt", note: "Version control, workflows" }
+  { name: "Git", level: 90, icon: "fa-brands fa-git-alt", note: "Version control, workflows" },
+  { name: "C++", level: 80, icon: "fa-solid fa-code", note: "Object-oriented programming" },
+  { name: "DSA", level: 50, icon: "fa-solid fa-code", note: "Data structures & algorithms" },
+  { name: "Python", level: 72, icon: "fa-brands fa-python", note: "Scripting, data analysis" },
+  { name: "Machine Learning", level: 65, icon: "fa-solid fa-robot", note: "Scikit-learn, TensorFlow" },
+  { name: "Data Science", level: 68, icon: "fa-solid fa-chart-line", note: "Pandas, NumPy, visualization"}
 ];
 
 const skillsGrid = qs("#skillsGrid");
@@ -819,6 +824,7 @@ window.addEventListener('load', () => {
   console.log('Portfolio loaded successfully! 🚀');
 
 });
+
 
 
 
